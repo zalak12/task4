@@ -1,0 +1,104 @@
+<html>
+
+<head>
+	<title>jQuery Zebra Stripes Demonstration</title>
+
+	<script type="text/javascript" src=
+		"https://code.jquery.com/jquery-3.5.1.js">
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+			$("table tr:nth-child(odd)")
+				.addClass("zebrastripe");
+		});
+	</script>
+
+	<style type="text/css">
+		body,
+		td {
+			font-size: 10pt;
+			text-align: center;
+		}
+		
+		h1 {
+			color: green;
+		}
+		
+		table {
+			background-color: black;
+			border: 1px black solid;
+			border-collapse: collapse;
+		}
+		
+		th {
+			font-size: 15px;
+			padding: 5px 8px;
+			border: 1px outset silver;
+			background-color: rgb(197, 69, 69);
+			color: white;
+		}
+		
+		tr {
+			border: 1px outset silver;
+			padding: 5px 8px;
+			background-color: white;
+			margin: 1px;
+		}
+		
+		tr.zebrastripe {
+			background-color: green;
+		}
+		
+		td {
+			border: 0.5px outset silver;
+			border-collapse: collapse;
+			padding: 5px 8px;
+		}
+		
+		.center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>
+		GeeksforGeeks
+	</h1>
+	<table class="center">
+		<tr>
+			<th>ID</th>
+			<th>Course</th>
+			<th>Price</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>b.c.a</td>
+			<td>40000 per year</td>
+		</tr>
+		<tr>
+			<td>2</td>
+			<td>mca</td>
+			<td>50000 per year</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>msc it</td>
+			<td>60000</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>b.com</td>
+			<td>30000 per year</td>
+		</tr>
+		<tr>
+			<td>6</td>
+			<td> Python</td>
+			<td>internship</td>
+		</tr>
+	</table>
+</body>
+
+</html>
